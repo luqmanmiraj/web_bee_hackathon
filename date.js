@@ -8,8 +8,8 @@ export default function date(props) {
   const onChange = (event, selectedDate) => {
     const currentDate = selectedDate;
     setDate(currentDate);
-    let dormatedDate = currentDate.split("T")[0];
-    props.changeValueFn( dormatedDate,props.index);
+    let formatedDate = currentDate.split("T")[0];
+    props.changeValueFn( formatedDate,props.index);
 
   };
   const showMode = (currentMode) => {
